@@ -3,4 +3,4 @@ alertificatr
 
 Lil' wrapper for creating notifications with Twitter Bootstrap's alert component.
 
-See example [here](http://jsbin.com/atazad/latest).
+See example <a href="http://jsbin.com/atazad/latest" target="_blank">here</a>.
