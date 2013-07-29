@@ -15,27 +15,30 @@
     <script src="./js/alertificatr.js"></script>
     <script>
 		var html = '<h3 class="alert-heading">Oh snap! You got an error!</h3>'+
-		    '<p>Change this and that and try again.</p>';
+	    	'<p>Change this and that and try again.</p>';
 
 		var alertificatr = new Alertificatr(".alertificatr");
 
 		alertificatr.create({
-		  html: html,
-		  type: "error",
-		  timeout: 2000
+			html: html,
+			type: "error",
+			timeout: 2000
 		});
 
-		html = 
-		  '<p><h3 class="alert-heading">Hey! You from outa town? <button class="btn btn-white" href="#">Join Piqwear</button> </h3>and start tagging and shopping!</p>';
-		alertificatr.create({
-		  closeOnClick: true,
-		  html: html,
-		  type: "blackberry"
+
+		html = '<p><h3 class="alert-heading">Hey! You from outa town? <button class="join btn btn-white" href="#">Join Piqwear</button> </h3>and start tagging and shopping!</p>';
+		var $notification = alertificatr.create({
+			closeOnClick: true,
+			html: html,
+			type: "blackberry"
 		});
 
+		$notification.find(".join").click(function(){
+			alert("You joined!");
+		});
 
 		html = '<h3 class="alert-heading">The more you know...</h3>'+
-		  '<p>When you tag a product, you\'re helping <a class="link-white" href="#">Piqwear</a> get more organized. <a class="link-white" href="#">View trending tags...</a></p>';
+		  	'<p>When you tag a product, you\'re helping <a class="link-white" href="#">Piqwear</a> get more organized. <a class="link-white" href="#">View trending tags...</a></p>';
 		alertificatr.create({
 		  showClose: true,
 		  html: html,

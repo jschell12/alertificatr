@@ -73,6 +73,8 @@ var Alertificatr = (function($, undefined){
           $content.fadeOut();
         }, timeout);
       }
+      
+      return $content;
     }
   };
   
