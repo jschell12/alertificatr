@@ -42,7 +42,15 @@ var Alertificatr = (function($, undefined){
       var showClose = options.showClose || self._options.showClose;
       var type = options.type || self._options.type;
       var html = options.html || self._options.html;
-      
+      var width = options.width || self._options.width;
+      var margin = options.margin || self._options.margin;
+
+      self._element.css({
+        "width": width,
+        "margin": margin//,
+      });
+      self._element.addClass("alertificatr");
+        
       var $content = $("<div></div>")
       .addClass("alertificatr-content")
       .append(self._template);

@@ -2,36 +2,73 @@
 border-style:solid;
 border-width:10px; 
 */
-.notificatr .alert-blackberry{
+.alertificatr .alert-blackberry{
   background-color: #4D0135 !important;
   font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;  
 }
 
-.notificatr  .alert-blackberry .btn-white{
+.alertificatr  .alert-blackberry .btn-white{
   color: #4D0135;
   background-color: White;
   font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
 }
 
-.notificatr .alert-blackberry .btn-white:hover{
+.alertificatr .alert-blackberry .btn-white:hover{
   color: #4D0135;
   background-color: #E0CCE0;
   font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
 }
 
-.notificatr .alert-greenapple{
+
+.alertificatr .alert-purple{
+  background-color: #852b99 !important;
+  font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;  
+}
+
+.alertificatr  .alert-purple .btn-white{
+  color: #852b99;
+  background-color: White;
+  font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
+}
+
+.alertificatr .alert-purple .btn-white:hover{
+  color: #852b99;
+  background-color: #E0CCE0;
+  font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
+}
+
+
+.alertificatr .alert-greenapple{
   background-color: #3fb618 !important;
   font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
 }
 
-.notificatr .alert-greenapple .link-white{
+.alertificatr .alert-greenapple .link-white{
   color: #ffffff;
   font-weight: 900;
   font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
 }
 
-.notificatr .alert-greenapple .link-white:hover{
+.alertificatr .alert-greenapple .link-white:hover{
   color: #081910;
   text-decoration: none;
   font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
+}
+
+.alertificatr  .alert-greenapple .btn-white{
+  color: #3fb618;
+  background-color: White;
+  font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
+}
+
+.alertificatr .alert-greenapple .btn-white:hover{
+  color: #3fb618;
+  background-color: #ffffff;
+  font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
+}
+
+
+.close{
+    font-size: 30px !important;
+    opacity: 1 !important;
 }
