@@ -38,8 +38,8 @@ var Alertificatr = (function($, undefined){
       
       var timeout = options.timeout || self._options.timeout;
       var template = options.template || self._options.template;
-      var closeOnClick = options.closeOnClick || self._options.closeOnClick;
-      var showClose = options.showClose || self._options.showClose;
+      var closeOnClick = options.closeOnClick;
+      var showClose = options.showClose;
       var type = options.type || self._options.type;
       var html = options.html || self._options.html;
       var width = options.width || self._options.width;
@@ -69,7 +69,8 @@ var Alertificatr = (function($, undefined){
         });
       }
       
-      if(showClose){            
+      if(showClose){
+        $content.find(".close").show();            
         $content.find(".close").click(function(e){
           e.preventDefault();        
           $content.fadeOut();
